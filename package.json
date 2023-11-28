@@ -1,0 +1,25 @@
+{
+  "name": "swiggy-clone",
+  "version": "1.0.0",
+  "description": "Online food ordering app with live api. In this project, parcel is used as a bundler.",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://@github.com/Shon070/Online-food-ordering-app.git)"
+  },
+  "author": "Shon Telang",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browsersList": [
+    "last 3 versions"
+  ]
+}
