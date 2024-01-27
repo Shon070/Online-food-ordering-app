@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee1d5;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background-color: #43281c;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo {
+  width: 100%;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.nav-items {
+  color: #fbf2c0;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.explore {
+  padding: 20px;
+  position: absolute;
+  left: 30%;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+  align-items: center;
+  margin: auto;
+}
+
+.res-cards {
+  width: 300px;
+  text-align: center;
+  margin: 7px;
+  padding: 10px;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.rCard {
+  color: inherit;
+  text-decoration: none;
+}
+
+.res-img {
+  border-radius: 20px;
+  width: 100%;
+  height: 180px;
+}
+
+.res-cards:hover {
+  border-color: #000;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.shimmer-container {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.shimmer {
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  margin: 1.5em;
+  margin-top: 5px;
+  padding: 10px;
+  height: 180px;
+  background-color: #eee1d5;
+  border: 1px solid gray;
+}
+
+.filter {
+  margin: 20px;
+  padding: 10px;
+  font-size: medium;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eee1d5;
+}
+
+.input-field {
+  padding: 10px;
+  background-color: #eee1d5;
+  border-radius: 5px;
+}
+
+.searchBtn {
+  padding: 10px;
+  margin: 5px;
+  font-size: medium;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eee1d5;
+}
+
+.filterBtn {
+  padding: 10px;
+  margin: 5px;
+  font-size: medium;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eee1d5;
+}
+
+.loginbtn {
+  margin: 0 30px;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 30;
+  border-radius: 5px;
+  background-color: #eee1d5;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 50px;
+}

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Online food ordering app with live api. In this project, parcel is used as a bundler.",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -17,7 +19,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1"
   },
   "browsersList": [
     "last 3 versions"
