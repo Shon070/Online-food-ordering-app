@@ -10,12 +10,12 @@ const ResMenu = () => {
   if (resMenu === null) return <Shimmer />;
 
   const { name, cuisines, avgRating, locality, costForTwoMessage } =
-    resMenu?.cards[0]?.card?.card?.info;
+    resMenu?.cards[2]?.card?.card?.info;
 
-  const { deliveryTime } = resMenu?.cards[0]?.card?.card?.info.sla;
+  const { deliveryTime } = resMenu?.cards[2]?.card?.card?.info.sla;
 
   const { itemCards } =
-    resMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+    resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
 
   return (
     <div className="menu">
