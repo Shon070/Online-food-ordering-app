@@ -7,18 +7,20 @@ const Card = ({ resData }) => {
   const { deliveryTime } = resData?.info?.sla;
 
   return (
-    <div className="res-cards">
+    <div className="m-6 p-5 w-80 h-full items-center justify-center">
       <img
-        className="res-img"
+        className=" w-64 h-40 border border-solid border-transparent rounded-xl items-center"
         alt="res-img"
         src={CDN_URL + cloudinaryImageId}
       />
-      <h3>{name}</h3>
-      <h4>
-        {avgRating} Stars * {deliveryTime}Minutes
-      </h4>
-      <h5>{costForTwo}</h5>
-      <h5>{cuisines.join(", ")}</h5>
+      <div className="text-center py-1 font-semibold">
+        <h3>{name}</h3>
+        <h4>
+          {avgRating} Stars * {deliveryTime}Minutes
+        </h4>
+        <h5>{costForTwo}</h5>
+        <h5>{cuisines.join(", ")}</h5>
+      </div>
     </div>
   );
 };
