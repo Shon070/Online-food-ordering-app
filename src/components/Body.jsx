@@ -16,7 +16,7 @@ const Body = () => {
   const fetchData = async () => {
     const data = await fetch(API);
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
 
     setListOfRes(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -55,7 +55,6 @@ const Body = () => {
           <Link
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
-            className="rCard"
           >
             <Card resData={restaurant} />
           </Link>
