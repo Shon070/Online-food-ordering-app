@@ -12,7 +12,6 @@ const ResCategoryList = ({ itemCards }) => {
             <div className="py-2">
               <span>{item.card.info.name}</span>
               <span>
-                {" "}
                 - ₹
                 {item.card.info.price
                   ? item.card.info.price / 100
@@ -22,10 +21,13 @@ const ResCategoryList = ({ itemCards }) => {
             <p className="text-xs">{item.card.info.description}</p>
           </div>
           <div className="w-3/12 p-4">
-            <img
-              src={CDN_URL + item.card.info.imageId}
-              className="w-full rounded-lg"
-            />
+            {item.card.info.imageId && (
+              <img
+                src={CDN_URL + item.card.info.imageId}
+                className="w-full rounded-lg"
+                alt={item.card.info.name}
+              />
+            )}
             <button className="p-2 w-16 mx-10 my-1 font-bold rounded-lg bg-white text-green-600 hover:bg-slate-100">
               ADD
             </button>

@@ -1,23 +1,18 @@
 import ResCategoryList from "./ResCategoryList";
 
-const ResCategory = ({ data, showItems, setShowIndex }) => {
-  const handleClick = () => {
-    setShowIndex((prevShowIndex) =>
-      prevShowIndex === showItems ? null : showItems
-    );
-  };
+const ResCategory = ({ data, isOpen, onClick }) => {
   return (
     <div
-      onClick={handleClick}
+      onClick={onClick}
       className="w-6/12 mx-auto my-4 p-4 bg-gray-200 shadow-lg cursor-pointer"
     >
       <div className="flex justify-between">
         <span className="font-bold">
           {data.title} ({data.itemCards.length})
         </span>
-        <span>{showItems ? "🔺" : "🔻"}</span>
+        <span>{isOpen ? "🔺" : "🔻"}</span>
       </div>
-      {showItems && <ResCategoryList itemCards={data.itemCards} />}
+      {isOpen && <ResCategoryList itemCards={data.itemCards} />}
     </div>
   );
 };
